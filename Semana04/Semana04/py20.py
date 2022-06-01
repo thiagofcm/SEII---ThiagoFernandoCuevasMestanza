@@ -1,4 +1,4 @@
-#import exceptions
+import exceptions
 
 try:
     f=open('currupt_file.txt')

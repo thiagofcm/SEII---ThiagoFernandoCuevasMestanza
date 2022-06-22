@@ -18,6 +18,10 @@ class SayHello(App):
         self.greeting = Label(text="What's your name?")
         self.window.add_widget(self.greeting)
 
+        #text input widget
+        self.user = TextInput(multiline=False)
+        self.window.add_widget(self.user)
+        
         return self.window
 
 if __name__ == "__main__":

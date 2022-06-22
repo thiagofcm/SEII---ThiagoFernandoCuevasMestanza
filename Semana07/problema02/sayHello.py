@@ -8,7 +8,15 @@ from kivy.uix.textinput import TextInput
 class SayHello(App):
     def build(self):
         self.window = GridLayout()
+        self.window.cols = 1
         #add widgets to window
+
+        #image widget
+        self.window.add_widget(Image(source="logo.png"))
+
+        #label widget
+        self.greeting = Label(text="What's your name?")
+        self.window.add_widget(self.greeting)
 
         return self.window
 

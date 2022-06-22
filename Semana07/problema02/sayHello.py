@@ -17,11 +17,14 @@ class SayHello(App):
         self.window.add_widget(Image(source="logo.png"))
 
         #label widget
-        self.greeting = Label(text="What's your name?")
+        self.greeting = Label(text="What's your name?", font_size = 18, color='00FFCE')
         self.window.add_widget(self.greeting)
 
         #text input widget
-        self.user = TextInput(multiline=False)
+        self.user = TextInput(multiline=False,
+                    padding_y = (20,20),
+                    size_hint = (1,0.5)
+                    )
         self.window.add_widget(self.user)
 
         #button widget

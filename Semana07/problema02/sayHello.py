@@ -9,6 +9,8 @@ class SayHello(App):
     def build(self):
         self.window = GridLayout()
         self.window.cols = 1
+        self.window.size_hint = (0.6, 0.7)
+        self.window.pos_hint = {"center_x": 0.5, "center_y":0.5}
         #add widgets to window
 
         #image widget
@@ -28,7 +30,7 @@ class SayHello(App):
         self.window.add_widget(self.button)
 
         return self.window
-        
+
     def callback(self, instance):
         self.greeting.text = "Hello " + self.user.text + "!"
 

@@ -30,7 +30,7 @@ class SayHello(App):
         #button widget
         self.button = Button(
                     text="GREET",
-                    size_hint = (1,0.5),
+                    size_hint = (1,0.5), 
                     bold = True,
                     background_color= '00FFCE',)
 
